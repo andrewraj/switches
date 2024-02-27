@@ -97,14 +97,6 @@ binary_sensor:
     on_press:
       - switch.toggle: relay_2
 
-  - platform: gpio
-    id: "fixgpio"
-    pin:
-      number: GPIO16
-      mode:
-        input: true
-        pullup: true 
-
 light:
   - platform: status_led
     name: "Connection LED"
